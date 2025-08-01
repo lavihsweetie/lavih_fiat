@@ -64,3 +64,137 @@ Trabalho de recuperação
 
 </body>
 </html>
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #000;
+    color: #fff;
+}
+
+.header .fiat-logo {
+    height: 40px;
+}
+
+.menu-left, .user-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-left span, .user-right span {
+    font-size: 14px;
+}
+
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.hero-section .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #979a9b;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.destaques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.destaque-item {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.destaque-item.maior {
+    flex: 2 1 100%;
+    height: 600px;
+}
+
+.destaque-item.menor {
+    flex: 1 1 calc(50% - 10px);
+}
+
+.destaque-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.overlay h2 {
+    margin-bottom: 10px;
+}
+
+.overlay a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
